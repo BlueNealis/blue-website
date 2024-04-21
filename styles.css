@@ -1,0 +1,22 @@
+:root {
+    --blue: #1B9AAA;
+    --orange: #CF5C36;
+    --darkBlue: #061b2a;
+    --tan: #DDDBCB;
+    --offWhite: #F5F1E3;
+
+}
+
+html {
+    margin:0;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    background: var(--darkBlue);
+    color: var(--offWhite);
+    width: 100%;
+}
