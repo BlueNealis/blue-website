@@ -5,4 +5,5 @@
     {"name": "Java", "icon": "", "experience": "tag"},
     {"name": "Spring Boot", "icon": "", "experience": "tag"},
     {"name": "Docker", "icon": "","experience": "tag"},
-    {"name": "Typescript", "icon": "", "experience": "tag"}]
+    {"name": "Typescript", "icon": "", "experience": "tag"}
+]
