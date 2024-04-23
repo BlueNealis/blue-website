@@ -1,22 +1,47 @@
 :root {
     --blue: #1B9AAA;
     --orange: #CF5C36;
+    --orangeLight: #e37328;
     --darkBlue: #061b2a;
     --tan: #DDDBCB;
     --offWhite: #F5F1E3;
 
 }
 
-html {
-    margin:0;
+a {
+    text-decoration: none;
+    color:var(--offWhite);
+}
+
+button {
+    background-color: var(--orange);
+    color:var(--offWhite);
+    padding: .5rem;
+    border-radius: 3px; 
+    border: none; 
+}
+
+button:hover {
+    background-color: var(--orangeLight);
+    cursor: pointer;
+    padding: .75rem;
 }
 
 body {
     margin: 0;
 }
 
-.header {
+html {
+    margin:0;
+}
+
+
+
+.intro-section {
     background: var(--darkBlue);
     color: var(--offWhite);
     width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
