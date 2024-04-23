@@ -48,6 +48,10 @@ html {
     align-items: center;
 }
 
+.intro-header {
+    margin-left: .5rem;
+}
+
 .info-section {
     background-color: var(--blue);
     color:var(--darkBlue);
@@ -64,4 +68,8 @@ html {
     padding: .5rem; 
     display: flex;
     justify-content: flex-end;
+}
+
+.name-container {
+    display:flex; 
 }
