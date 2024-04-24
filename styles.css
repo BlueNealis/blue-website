@@ -50,10 +50,12 @@ html {
     display:flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .intro-header {
-    margin-left: .5rem;
+    margin-left: 3rem;
+    line-height: 3rem;
 }
 
 .info-section {
@@ -75,5 +77,5 @@ html {
 }
 
 .name-container {
-    display:flex; 
+    display: flex; 
 }
