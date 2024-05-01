@@ -36,9 +36,26 @@ body {
 form {
     display: flex;
     flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
 }
 html {
     margin:0;
+}
+
+input, textarea {
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--offWhite);
+    width: 50%;
+}
+
+label {
+    margin-top: .5rem;
+    margin-bottom: .25rem;
+    color: var(--offWhite);
 }
 
 .back-to-top-anchor {
@@ -92,4 +109,16 @@ html {
     border-radius: 5px;
     width: 200px;
     height: 50px;
+}
+
+.submit-button {
+    background-color: var(--orange);
+    border-radius: 5px;
+    padding: .5rem;
+    border: none;
+    color: var(--offWhite);
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    width: 30%;
+
 }
