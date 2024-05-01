@@ -1,6 +1,30 @@
 <!DOCTYPE html>
 <html>
     <script src="./technology-card.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "Ga4icSbwpok9ei0Aa",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                console.log(this)
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
     <head>
         <link rel="stylesheet" href="styles.css">
     </head>
@@ -77,17 +101,17 @@
             </div>
             <a class="back-to-top-anchor" href="#top">Back To Top</a>
         </div>
-        <div class="info-section" id="contact-form">
+        <div class="info-section">
             <h1>Get In Touch!</h1>
-            <Form>
+            <form id="contact-form">
                 <label for="email">Your E-Mail:</label>
                 <input id="email" name="email" type="text">
                 <label for="name">Name:</label>
                 <input id="name" name="name" type="text">
                 <label for="message">Message:</label>
-                <input id="message" name="message" type="text">
-                <button onclick="submitForm()">Submit</button>
-            </Form>
+                <textarea name="message"></textarea>
+                <input type="submit" value="Send">
+            </form>
             <a class="back-to-top-anchor" href="#top">Back To Top</a>
         </div>
     </body>
